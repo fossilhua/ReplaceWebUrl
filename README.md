@@ -1,9 +1,9 @@
 # ReplaceWebUrl
 First of all, a screenshot:
 
-![screenshot1]( https://github.com/fossilhua/ReplaceWebUrl/blob/master/gif/gif1.gif )
+![screenshot1]( https://github.com/fossilhua/ReplaceWebUrl/blob/master/raw/gif1.gif )
 
-[Demo APK下载]()
+[Demo APK下载](https://github.com/fossilhua/ReplaceWebUrl/blob/master/raw/app-debug.apk)
 
 ## How to Use
 
