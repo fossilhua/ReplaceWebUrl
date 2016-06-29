@@ -64,8 +64,11 @@ public class LinkUtil {
             tv.setMovementMethod(LinkMovementMethod.getInstance());
             tv.setHighlightColor(Color.parseColor("#36969696"));
             tv.setText(stringBuilder);
+            tv.setTypeface(fontFace);
+        }else {
+            tv.setText(str);
         }
-        tv.setTypeface(fontFace);
+
     }
 
     private List<UrlSpec> matchUrl(String str) {
