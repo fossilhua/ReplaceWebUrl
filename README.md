@@ -22,7 +22,8 @@ dependencies{
 
 ``` 
 LinkUtil linkUtil = new LinkUtil(this);
-linkUtil.setReplaceStr("\uE620网络链接");
+linkUtil.setReplaceStr("这是个网络链接");
+linkUtil.setTextPaint(Color.BLUE, false);
 linkUtil.applyUrl(textView, des);
 linkUtil.setOnClickUrl(new LinkUtil.OnClickUrl() {
     @Override
@@ -32,6 +33,10 @@ linkUtil.setOnClickUrl(new LinkUtil.OnClickUrl() {
 });
 ```
 ### Version Log
-* ***v1.0.0*** ...
+* ***v1.0.0*** 
+添加更改文字方法
+* ***v1.0.1*** 
+添加设置链接样式方法 
+修改设置替换文字样式方法
 
 
