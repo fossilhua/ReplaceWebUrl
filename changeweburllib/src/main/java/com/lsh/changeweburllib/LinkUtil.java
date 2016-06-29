@@ -19,11 +19,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- *
  * Created by hua on 2016/6/27.
  */
 public class LinkUtil {
-    private String replaceStr = "\ue620链接";
+    private String replaceStr = "\uE620网络链接";
     private Typeface fontFace;
 
     public LinkUtil(Context context) {
@@ -34,8 +33,8 @@ public class LinkUtil {
         return replaceStr;
     }
 
-    public void setReplaceStr(String replaceStr) {
-        this.replaceStr = replaceStr;
+    public void setReplaceStr(String str) {
+        replaceStr = "\uE620" + str;
     }
 
     public void applyUrl(TextView tv, String str) {
@@ -65,7 +64,7 @@ public class LinkUtil {
             tv.setHighlightColor(Color.parseColor("#36969696"));
             tv.setText(stringBuilder);
             tv.setTypeface(fontFace);
-        }else {
+        } else {
             tv.setText(str);
         }
 
@@ -110,10 +109,18 @@ public class LinkUtil {
 
         @Override
         public void updateDrawState(TextPaint ds) {
-            ds.setColor(Color.RED);
-            ds.setUnderlineText(false);
+            ds.setColor(color);
+            ds.setUnderlineText(bln);
         }
 
+    }
+
+    private int color = Color.RED;
+    private boolean bln = false;
+
+    public void setTextPaint(int color, boolean bln) {
+        this.color = color;
+        this.bln = bln;
     }
 
     public void setOnClickUrl(OnClickUrl mOnClickUrl) {

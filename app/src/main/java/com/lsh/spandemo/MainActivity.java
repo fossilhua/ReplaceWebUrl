@@ -1,5 +1,6 @@
 package com.lsh.spandemo;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -29,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         LinkUtil linkUtil = new LinkUtil(this);
-        linkUtil.setReplaceStr("\uE620网络链接");
+        linkUtil.setReplaceStr("这是个网络链接");
+        linkUtil.setTextPaint(Color.BLUE, false);
         linkUtil.applyUrl(mTvAfter, des);
         linkUtil.setOnClickUrl(new LinkUtil.OnClickUrl() {
             @Override
