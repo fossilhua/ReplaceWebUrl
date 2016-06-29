@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">SpanDemo</string>
-
-
+    <string name="text_change">转换</string>
+    <string name="text_test_str">\uD83D\uDE03测试http://baidu.com 测试http://ddddd.com \uD83D\uDE03</string>
 </resources>
