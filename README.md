@@ -14,7 +14,7 @@ Please follow the latest publishing aar on jcenter.
 follow by the gradle code
 ```gradle
 dependencies{
-    compile 'com.lsh:ReplaceWebUrl:1.0.0'
+    compile 'com.lsh:ReplaceWebUrl:1.0.1'
 }
 ```
 
