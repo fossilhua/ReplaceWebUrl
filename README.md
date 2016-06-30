@@ -34,9 +34,14 @@ linkUtil.setOnClickUrl(new LinkUtil.OnClickUrl() {
 ```
 ### Version Log
 * ***v1.0.0*** 
+
 添加更改文字方法
+
 * ***v1.0.1*** 
+
 添加设置链接样式方法 
+
 修改设置替换文字样式方法
+
 
 
