@@ -1,4 +1,7 @@
 # ReplaceWebUrl
+
+仿微博文本中web url替换成图文效果，可自定义文字效果。
+
 First of all, a screenshot:
 
 ![screenshot1](https://raw.githubusercontent.com/fossilhua/ReplaceWebUrl/master/raw/gif1.gif)
